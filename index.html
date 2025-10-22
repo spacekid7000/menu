@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corruption Kit</title>
+  <link rel="stylesheet" href="theme.css" />
+  <style>
+    /* MAIN MENU STYLES */
+    .menu-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+
+    .menu-header {
+      text-align: center;
+    }
+
+    .menu-header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      letter-spacing: 2px;
+      margin-bottom: 0.5rem;
+    }
+
+    .menu-header p {
+      color: var(--secondary-text-color);
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .app-card {
+      background: var(--surface-color);
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      text-decoration: none;
+      color: var(--primary-text-color);
+      transition: all var(--transition-speed) ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .app-card:hover {
+      border-color: var(--accent-color);
+      transform: translateY(-4px);
+    }
+
+    .app-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    .app-card p {
+      color: var(--secondary-text-color);
+      font-size: 0.9rem;
+      line-height: 1.4;
+      flex-grow: 1;
+    }
+
+    .open-btn {
+      margin-top: 1.5rem;
+      background: var(--accent-color);
+      color: #fff;
+      border: none;
+      border-radius: var(--border-radius);
+      padding: 0.6rem 1.25rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background var(--transition-speed) ease;
+    }
+
+    .open-btn:hover {
+      background: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--secondary-text-color);
+      font-size: 0.8rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="menu-container">
+      <header class="menu-header">
+        <h1>DATABEND</h1>
+        <p>Space Kid's Destruction Kit</p>
+      </header>
+
+      <main class="apps-grid">
+        <a href="https://spacekid7000.github.io/DataBand1.1/" class="app-card">
+          <h2>DATABEND</h2>
+          <p>Transform and distort data-driven media — glitch art for the digital age.</p>
+          <button class="open-btn">Open</button>
+        </a>
+
+        <a href="https://spacekid7000.github.io/DataMOS/" class="app-card">
+          <h2>DATAMOS</h2>
+          <p>Visual data mashing and audio-visual fusion — bend pixels and sound together.</p>
+          <button class="open-btn">Open</button>
+        </a>
+
+        <a href="https://spacekid7000.github.io/MidiPoison/" class="app-card">
+          <h2>MIDIBEND</h2>
+          <p>Advanced MIDI transformations — bend, twist, and remix MIDI data in real time.</p>
+          <button class="open-btn">Open</button>
+        </a>
+
+        <a href="datatransform.html" class="app-card">
+          <h2>DATADEFUSSER</h2>
+          <p>Convert, merge, and reshape data across creative workflows effortlessly.</p>
+          <button class="open-btn">Open</button>
+        </a>
+      </main>
+
+      <footer>
+        <p>© 2025 DATABEND | Crafted By SpaceKid</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
